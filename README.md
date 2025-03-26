@@ -1,3 +1,4 @@
+WordPress Website Deployment on AWS
 📚 Project Overview
 This project demonstrates the deployment of a highly available WordPress website on AWS using a three-tier architecture. The infrastructure is designed for scalability, fault tolerance, and security by utilizing EC2 instances, RDS, EFS, VPC, NAT Gateway, and Application Load Balancer.
 
