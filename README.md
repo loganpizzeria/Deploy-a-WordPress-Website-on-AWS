@@ -1,6 +1,7 @@
 WordPress Website Deployment on AWS
 
 📚 Project Overview
+
 This project demonstrates the deployment of a highly available WordPress website on AWS using a three-tier architecture. The infrastructure is designed for scalability, fault tolerance, and security by utilizing EC2 instances, RDS, EFS, VPC, NAT Gateway, and Application Load Balancer.
 
 The GitHub repository contains:
@@ -12,6 +13,7 @@ Deployment scripts for configuring EC2 instances and launching WordPress.
 Launch template script for auto-scaling EC2 instances.
 
 🛠️ Architecture Components
+
 1️⃣ Network Setup (VPC)
 3-Tier VPC: Includes public and private subnets across two availability zones (AZs) for fault tolerance.
 
@@ -45,6 +47,7 @@ SSL Certificate: Encrypts traffic between users and the website using AWS Certif
 Route 53 DNS: Manages the domain name and points it to the ALB.
 
 ⚙️ Installation & Deployment
+
 ✅ 1. Clone the Repository
 bash
 Copy
@@ -135,7 +138,9 @@ mount -a
 # Set permissions and restart Apache
 chown apache:apache -R /var/www/html
 sudo systemctl restart httpd
+
 🌐 AWS Services Used
+
 EC2 Instances: For hosting WordPress.
 
 Elastic Load Balancer (ALB): For distributing web traffic.
@@ -151,6 +156,7 @@ Amazon Route 53: For DNS management.
 AWS Certificate Manager: For SSL encryption.
 
 🚀 How to Access the Website
+
 Get the ALB DNS name from the AWS console.
 
 Map the domain name using Route 53.
@@ -164,6 +170,7 @@ https://your-domain/wp-admin
 Use the admin credentials you created during the MySQL setup.
 
 🛠️ Project Structure
+
 bash
 Copy
 Edit
@@ -178,7 +185,8 @@ Contribute: Feel free to fork the repo, suggest improvements, or submit pull req
 
 Issues: If you encounter any problems, please submit an issue.
 
-🔒 Security Considerations
+🔒 Security Considerationsy
+
 Ensure your security groups restrict access only to necessary ports (e.g., 80, 443, 22).
 
 Regularly update your EC2 instances to patch vulnerabilities.
